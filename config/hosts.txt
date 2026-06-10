@@ -1,0 +1,7 @@
+# NTP fleet - public servers used as a demo fleet.
+# In a real deployment replace these with your internal NTP servers.
+pool.ntp.org
+time.cloudflare.com
+time.google.com
+time.nist.gov
+time.apple.com

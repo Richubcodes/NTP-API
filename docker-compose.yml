@@ -1,0 +1,14 @@
+services:
+  ntp-monitor:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ntp_data:/data
+      - ./config/hosts.txt:/app/config/hosts.txt:ro
+    environment:
+      POLL_INTERVAL_SECONDS: 60
+    restart: unless-stopped
+
+volumes:
+  ntp_data:
