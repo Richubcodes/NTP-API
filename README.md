@@ -6,7 +6,7 @@ Read-only visibility into NTP server health across a fleet. Designed to eliminat
 
 ## Why this exists
 
-In large network environments, NTP infrastructure is critical but invisible. Engineers historically need elevated access to query NTP servers directly - every health check becomes a security risk and a functionality risk when conducted by someone new to the field.
+In large network environments, NTP infrastructure is critical but invisible. Engineers historically need elevated access to query NTP servers directly - every health check becomes a security risk and a functionality risk when conducted both by experts and those new to the field.
 
 This service polls NTP servers using the NTPv3 protocol, stores results, and exposes a dashboard and REST API so anyone on the team can see the fleet's state without requiring privileged access.
 
